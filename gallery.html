@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Gallery</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <style>
+    .gallery-container {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .photo {
+      width: 25%;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+
+    .photo img {
+      width: 100%;
+      height: auto;
+    }
+
+    .caption {
+      text-align: center;
+    }
+    body {
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: magenta; /* New background color */
+}
+
+header {
+  background-color: #333;
+  padding: 10px;
+}
+
+.menu {
+  text-align: center;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+
+.menu ul li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.menu ul li a:hover {
+  color: #ffcc00;
+}
+
+body.index {
+  color: #333;
+}
+
+body.physics {
+  background-color: blue;
+  color: #fff;
+}
+
+body.chemistry {
+  background-color: orange;
+  color: #fff;
+}
+
+body.biology {
+  background-color: maroon;
+  color: #fff;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 24px;
+}
+
+p {
+  text-align: center;
+  margin: 20px auto;
+  max-width: 600px;
+  line-height: 1.5;
+}
+
+  </style>
+  <header>
+    <nav class="menu">
+      <form class="search-form" action="search.html" method="GET">
+        <input type="text" name="query" placeholder="Search..." />
+        <button type="submit">Search</button>
+      </form>
+      
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="physics.html">Physics Department</a></li>
+        <li><a href="chemistry.html">Chemistry Department</a></li>
+        <li><a href="biology.html">Biology Department</a></li>
+        <li><a href="Quiz.html">Quiz</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="cont.html">Contact our Team</a></li>
+        <li><a href="AiAlan.html">AI Chatbot</a></li>
+      </ul>
+    </nav>
+  </header>
+</head>
+<body>
+  <div class="gallery-container">
+    <div class="photo">
+      <img src="JustFarts.png" alt="Image 1">
+      <div class="caption">Human Cells</div>
+    </div>
+    <div class="photo">
+      <img src="download.jpg" alt="Image 2">
+      <div class="caption">An Amoeba</div>
+    </div>
+    <div class="photo">
+      <img src="fta.webp" alt="Image 1">
+      <div class="caption">An animal cell.</div>
+    </div>
+    <div class="photo">
+      <img src="hello.jpg" alt="Image 2">
+      <div class="caption">Blood cells travelling through a vessel</div>
+    </div>   <div class="photo">
+      <img src="physics-concept.webp" alt="Image 1">
+      <div class="caption">an Atom</div>
+    </div>
+    <div class="photo">
+      <img src="Heart.jpg" alt="Image 2">
+      <div class="caption">Hyper Realistic Human Heart</div>
+    </div>   <div class="photo">
+      <img src="Poo.jpg" alt="Image 1">
+      <div class="caption">Test Tube Chemicals</div>
+    </div>
+    <div class="photo">
+      <img src="Lab.jpg" alt="Image 2">
+      <div class="caption">A dark lab.</div>
+    </div>   <div class="photo">
+      <img src="Concentration.jpg" alt="Image 1">
+      <div class="caption">A group of chemicals mixing to make a potion</div>
+    </div>
+    <div class="photo">
+      <img src="Substance.webp" alt="Image 2">
+      <div class="caption">Substance - 128</div>
+    </div>   <div class="photo">
+      <img src="Po.jpg" alt="Image 1">
+      <div class="caption">A Potion</div>
+    </div>
+    <div class="photo">
+      <img src="Atom.jpg" alt="Image 2">
+      <div class="caption">An Realistic drawing of an Atom</div>
+    </div>   <div class="photo">
+      <img src="BlackHole.jpg" alt="Image 1">
+      <div class="caption">A Black Hole</div>
+    </div>
+    <div class="photo">
+      <img src="MarsFarts.jpg" alt="Image 2">
+      <div class="caption">The Planet Mars</div>
+    </div>   <div class="photo">
+      <img src="SuperFarts.jpg" alt="Image 1">
+      <div class="caption">A Supernova</div>
+    </div>
+    <div class="photo">
+      <img src="HyperFarts.jpg" alt="Image 2">
+      <div class="caption">A Hypernova</div>
+    </div>   <div class="photo">
+      <img src="Titanfarts.jpeg" alt="Image 1">
+      <div class="caption">Saturn's moon, Titan</div>
+    </div>
+    <div class="photo">
+      <img src="Sed.jpg" alt="Image 2">
+      <div class="caption">A Sedimentary Rock</div>
+    </div>   <div class="photo">
+      <img src="Meta.jpg" alt="Image 1">
+      <div class="caption">A Metamorphic Rock</div>
+    </div>
+    <div class="photo">
+      <img src="Ig.webp" alt="Image 2">
+      <div class="caption">A Igneous Rock</div>
+    </div>
+  </div>
+  
+
+  <script src="main.js"></script>
+
+</body>
+</html>

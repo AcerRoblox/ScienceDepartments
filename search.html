@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Search Results</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body style="background-color: teal;">
+  <header>
+    <nav class="menu">
+        <nav class="menu">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="physics.html">Physics Department</a></li>
+              <li><a href="chemistry.html">Chemistry Department</a></li>
+              <li><a href="biology.html">Biology Department</a></li>
+              <li><a href="Quiz.html">Quiz</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="cont.html">Contact our Team</a></li>
+              <li><a href="AiAlan.html">AI Chatbot</a></li>
+            </ul>
+          </nav>
+          
+    </nav>
+    <form class="search-form" action="search.html" method="GET">
+      <input type="text" name="query" placeholder="Search..." value="{{query}}" />
+      <button type="submit">Search</button>
+    </form>
+  </header>
+
+  <h1>Search Results</h1>
+  <div id="search-results"></div>
+
+  <script src="main.js"></script>
+  <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const query = urlParams.get('query');
+
+    const searchInput = document.querySelector('.search-form input[name="query"]');
+    searchInput.value = query;
+
+    function fetchSearchResults(query) {
+      const searchResultsData = [
+        { title: 'Home', url: 'index.html' },
+        { title: 'Physics Department', url: 'physics.html' },
+        { title: 'Chemistry Department', url: 'chemistry.html' },
+        { title: 'Biology Department', url: 'biology.html' },
+        { title: 'Quiz', url: 'Quiz.html' },
+        { title: 'Gallery', url: 'gallery.html' },
+        { title: 'Contact our Team', url: 'cont.html' },
+        { title: 'AI Chatbot', url: 'AiAlan.html' }
+      ];
+
+      const searchResultsContainer = document.getElementById('search-results');
+
+      let resultsHTML = '';
+      const filteredResults = searchResultsData.filter(result =>
+        result.title.toLowerCase().includes(query.toLowerCase())
+      );
+
+      if (filteredResults.length > 0) {
+        for (const result of filteredResults) {
+          resultsHTML += `<div><a href="${result.url}">${result.title}</a></div>`;
+        }
+      } else {
+        resultsHTML = '<p>No options found.</p>';
+      }
+
+      searchResultsContainer.innerHTML = resultsHTML;
+    }
+
+    fetchSearchResults(query);
+  </script>
+</body>
+</html>

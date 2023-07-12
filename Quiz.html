@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Quiz!</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    
+    .header {
+      background-color: #333;
+      padding: 10px;
+      text-align: center;
+    }
+    
+    .menu {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .menu ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+    
+    .menu ul li {
+      margin-right: 10px;
+    }
+    
+    .menu ul li a {
+      text-decoration: none;
+    }
+    
+    .content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+    
+    .quiz-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      max-width: 640px;
+      width: 100%;
+      height: 624px;
+      border: none;
+    }
+    
+    .search-form {
+      margin-bottom: 10px;
+    }
+  </style>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body class="physics">
+  <header class="header">
+    <form class="search-form" action="search.html" method="GET">
+      <input type="text" name="query" placeholder="Search..." />
+      <button type="submit">Search</button>
+    </form>
+    <nav class="menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="physics.html">Physics Department</a></li>
+        <li><a href="chemistry.html">Chemistry Department</a></li>
+        <li><a href="biology.html">Biology Department</a></li>
+        <li><a href="Quiz.html">Quiz</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="cont.html">Contact our Team</a></li>
+        <li><a href="AiAlan.html">AI Chatbot</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <div class="content">
+    <h1>Quiz</h1>
+    <p>Test your knowledge here!</p>
+    <p>Good Luck On The Quiz.</p>
+    <div class="quiz-container">
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe2O31yBCrShLjQ5puD9oIgS_3gUu6e7VncexytwMWOe7mbEA/viewform?embedded=true" width="640" height="2438" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    </div>
+  </div>
+</body>
+</html>
